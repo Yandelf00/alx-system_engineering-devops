@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#script that displays ls in format and all
+for file in *; do
+	echo "${file#*-}"
+done
