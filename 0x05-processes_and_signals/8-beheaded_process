@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#process that kills seven
+pkill -f -SIGKILL 7-highlander
