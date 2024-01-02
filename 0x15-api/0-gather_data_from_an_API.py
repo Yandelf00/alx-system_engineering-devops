@@ -14,7 +14,8 @@ if __name__ == "__main__":
             comp += 1
         total += 1
 
-    print(f"Employee {user.json()['name']} is done with tasks({comp}/{total})")
+    print("Employee {} is done with tasks({}/{}):".format(
+        user.json()['name'], comp, total))
     for el in todos.json():
         if el['completed'] is True:
             print("\t" + " " + f"{el['title']}")
