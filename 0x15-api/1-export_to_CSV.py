@@ -15,7 +15,7 @@ if __name__ == "__main__":
     todos_data = todos.json()
     csv_filename = f"{sys.argv[1]}.csv"
     with open(csv_filename, mode='w', newline='') as csv_file:
-        csv_writer = csv.writer(csv_file)
+        csv_writer = csv.writer(csv_file, quoting=csv.QUOTE_ALL)
         for todo in todos_data:
             csv_writer.writerow([{user_data['id']},
                                 user_data['username'],
