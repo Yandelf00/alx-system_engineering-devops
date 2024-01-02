@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """Returns a todolist or something after getting id."""
 import requests
 import sys
